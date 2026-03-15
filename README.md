@@ -34,7 +34,7 @@ The backend isolates **image generation in subprocess workers**, preventing SDK 
 
 ---
 
-# 🧠 System Architecture
+## 🧠 System Architecture
 
 EchoSketch works through a multimodal AI pipeline:
 
@@ -54,7 +54,7 @@ Interactive Storyboard UI
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
 ## Frontend
 - React (Vite)
@@ -69,9 +69,9 @@ Interactive Storyboard UI
 
 ---
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
-## Prerequisites
+#3# Prerequisites
 
 Make sure the following are installed:
 
@@ -83,7 +83,7 @@ Make sure the following are installed:
 
 ---
 
-## Backend Setup
+### Backend Setup
 
 Navigate to the backend folder:
 
@@ -122,7 +122,7 @@ http://127.0.0.1:8000
 ```
 ---
 
-## Frontend Setup
+### Frontend Setup
 
 Navigate to the frontend folder:
 ```bash
@@ -142,7 +142,7 @@ The frontend will start at:
 http://localhost:5173
 ```
 ---
-## 📂 Project Structure
+### 📂 Project Structure
 EchoSketch
 │
 ├── backend
@@ -161,7 +161,7 @@ EchoSketch
 │
 └── README.md
 
-## 🎯 Use Cases
+### 🎯 Use Cases
 
 EchoSketch can be used for:
 
@@ -176,7 +176,7 @@ Educational visual storytelling
 Storyboarding for animation or games
 
 
-## 🔮 Future Improvements
+### 🔮 Future Improvements
 
 Multi-character dialogue generation
 
