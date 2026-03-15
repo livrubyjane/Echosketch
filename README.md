@@ -96,13 +96,9 @@ python -m venv venv
 
 Activate the environment:
 
-Mac / Linux
+Mac / Linux : source venv/bin/activate
 
-source venv/bin/activate
-
-Windows
-
-venv\Scripts\activate
+Windows : venv\Scripts\activate
 
 Install dependencies:
 
@@ -142,7 +138,8 @@ The frontend will start at:
 http://localhost:5173
 ```
 ---
-### 📂 Project Structure
+## 📂 Project Structure
+
 EchoSketch
 │
 ├── backend
@@ -161,7 +158,8 @@ EchoSketch
 │
 └── README.md
 
-### 🎯 Use Cases
+
+## 🎯 Use Cases
 
 EchoSketch can be used for:
 
@@ -176,7 +174,7 @@ Educational visual storytelling
 Storyboarding for animation or games
 
 
-### 🔮 Future Improvements
+## 🔮 Future Improvements
 
 Multi-character dialogue generation
 
