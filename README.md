@@ -1,4 +1,3 @@
-EchoSketch AI
 EchoSketch AI is a high-fidelity, interactive storytelling platform that transforms simple ideas into multidimensional cinematic experiences. Using state-of-the-art Generative AI, it builds 5-panel story arcs complete with stylized visuals, orchestral-quality narration, and a cinematic "Marvel-style" user interface.
 
 Key Features:
