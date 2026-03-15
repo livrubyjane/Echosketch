@@ -6,15 +6,15 @@ The goal of EchoSketch is to make storytelling more immersive, creative, and acc
 
 ---
 
-✨ Key Features
+## ✨ Key Features
 
-### 🎬 Cinematic Storyboarding
+### 1. Cinematic Storyboarding
 A fluid **horizontal comic-strip interface** that displays stories panel by panel with smooth animations using **Framer Motion**.
 
-### 🧠 AI Story Generation
+### 2. AI Story Generation
 Uses **Google Gemini** to expand a simple prompt into a structured **5-panel story arc**.
 
-### 🎨 Dynamic Art Styles
+### 3. Dynamic Art Styles
 Generate story visuals in multiple artistic styles:
 
 - Anime / Manga  
@@ -23,13 +23,13 @@ Generate story visuals in multiple artistic styles:
 - Disney / Pixar  
 - Watercolor Storybook  
 
-### 🔊 Assistive Narration
+### 4. Assistive Narration
 Integrated **Edge Text-to-Speech (TTS)** generates expressive voice narration for every story panel.
 
-### 🔄 Infinite Story Continuation
+### 5. Infinite Story Continuation
 Users can continue the story using a **“What happens next?” engine** powered by **Gemini Flash Lite**.
 
-### ⚙️ Subprocess Isolation
+### 6. Subprocess Isolation
 The backend isolates **image generation in subprocess workers**, preventing SDK async corruption and ensuring reliable generation.
 
 ---
