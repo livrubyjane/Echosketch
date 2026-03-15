@@ -71,7 +71,7 @@ Interactive Storyboard UI
 
 ## 🚀 Getting Started
 
-#3# Prerequisites
+### Prerequisites
 
 Make sure the following are installed:
 
