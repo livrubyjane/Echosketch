@@ -1,6 +1,6 @@
 # EchoSketch AI 🎨
 
-EchoSketch AI is a high-fidelity interactive storytelling platform that transforms simple ideas into cinematic visual narratives. Using state-of-the-art Generative AI, the system converts a short prompt into a **5-panel illustrated storyboard** complete with stylized visuals and narration.
+EchoSketch AI is a high-fidelity interactive storytelling platform that transforms simple ideas into cinematic visual narratives. Using state-of-the-art Generative AI powered by Google’s Gemini models running on Google Cloud infrastructure, the system converts a short prompt into a 5-panel illustrated storyboard complete with stylized visuals and narration.
 
 The goal of EchoSketch is to make storytelling more immersive, creative, and accessible by combining modern AI models with an intuitive visual interface.
 
@@ -12,7 +12,7 @@ The goal of EchoSketch is to make storytelling more immersive, creative, and acc
 A fluid **horizontal comic-strip interface** that displays stories panel by panel with smooth animations using **Framer Motion**.
 
 ### 2. AI Story Generation
-Uses **Google Gemini** to expand a simple prompt into a structured **5-panel story arc**.
+Uses **Google Gemini via Google AI Studio APIs**, powered by **Google Cloud’s generative AI infrastructure**, to expand a simple prompt into a structured 5-panel story arc.
 
 ### 3. Dynamic Art Styles
 Generate story visuals in multiple artistic styles:
@@ -63,9 +63,18 @@ Interactive Storyboard UI
 
 ## Backend
 - FastAPI (Python)
-- Google Gemini — Story Director
+- Google Gemini (Google Cloud AI Infrastructure) — Story Director
 - Hugging Face SDXL — Visual Artist
 - Edge TTS — Narrator
+  
+---
+
+## ☁️ Google Cloud Usage
+
+EchoSketch uses Google’s Gemini large language models through the Google AI Studio API.  
+Gemini runs on Google Cloud’s generative AI infrastructure, enabling scalable and reliable story generation.
+
+This allows EchoSketch to convert simple prompts into structured story arcs that drive the visual storyboard generation pipeline.
 
 ---
 
