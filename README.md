@@ -62,7 +62,7 @@ Interactive Storyboard UI
 
 ## Backend
 - FastAPI (Python)
-- Google Gemini (Google Cloud AI Infrastructure) — Story Director
+- Google Gemini via Google Generative AI SDK (google-genai) — Story Director
 - Hugging Face SDXL — Visual Artist
 - Edge TTS — Narrator
 
