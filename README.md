@@ -71,7 +71,7 @@ Interactive Storyboard UI
 
 # 🚀 Getting Started
 
-## 1. Prerequisites
+## Prerequisites
 
 Make sure the following are installed:
 
@@ -83,7 +83,7 @@ Make sure the following are installed:
 
 ---
 
-# Backend Setup
+## Backend Setup
 
 Navigate to the backend folder:
 
@@ -110,16 +110,22 @@ pip install -r requirements.txt
 Configure Environment Variables
 
 Create a .env file inside the backend/ directory.
-Run the backend server:
+GEMINI_API_KEY="your_google_ai_studio_key"
+HF_TOKEN="your_huggingface_access_token"
 
+Run the backend server:
 uvicorn main:app --reload
 
 The API will start at:
 
 http://127.0.0.1:8000
-Frontend Setup
+```
+---
+
+## Frontend Setup
 
 Navigate to the frontend folder:
+```bash
 
 cd frontend
 
@@ -134,7 +140,9 @@ npm run dev
 The frontend will start at:
 
 http://localhost:5173
-📂 Project Structure
+```
+---
+## 📂 Project Structure
 EchoSketch
 │
 ├── backend
@@ -152,7 +160,8 @@ EchoSketch
 │   └── package.json
 │
 └── README.md
-🎯 Use Cases
+
+## 🎯 Use Cases
 
 EchoSketch can be used for:
 
@@ -166,7 +175,8 @@ Educational visual storytelling
 
 Storyboarding for animation or games
 
-🔮 Future Improvements
+
+## 🔮 Future Improvements
 
 Multi-character dialogue generation
 
