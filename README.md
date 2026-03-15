@@ -12,7 +12,7 @@ The goal of EchoSketch is to make storytelling more immersive, creative, and acc
 A fluid **horizontal comic-strip interface** that displays stories panel by panel with smooth animations using **Framer Motion**.
 
 ### 2. AI Story Generation
-Uses **Google Gemini via Google AI Studio APIs**, powered by **Google Cloud’s generative AI infrastructure**, to expand a simple prompt into a structured 5-panel story arc.
+Uses **Uses Google's Gemini models through the Google Generative AI SDK to expand a simple prompt into a structured 5-panel story arc**, powered by **Google Cloud’s generative AI infrastructure**, to expand a simple prompt into a structured 5-panel story arc.
 
 ### 3. Dynamic Art Styles
 Generate story visuals in multiple artistic styles:
@@ -38,17 +38,16 @@ The backend isolates **image generation in subprocess workers**, preventing SDK 
 
 EchoSketch works through a multimodal AI pipeline:
 
-
-User Prompt
-↓
-Gemini (Story Generation)
-↓
-5-Panel Story Arc
-↓
-SDXL Image Generation
-↓
-Edge TTS Narration
-↓
+User Prompt  
+↓  
+Gemini (Story Generation using Google GenAI SDK)  
+↓  
+Structured 5-Panel Story Arc  
+↓  
+SDXL Image Generation (Hugging Face)  
+↓  
+Edge TTS Narration  
+↓  
 Interactive Storyboard UI
 
 
@@ -66,15 +65,25 @@ Interactive Storyboard UI
 - Google Gemini (Google Cloud AI Infrastructure) — Story Director
 - Hugging Face SDXL — Visual Artist
 - Edge TTS — Narrator
+
+## Multimodal AI Pipeline
+
+EchoSketch combines multiple AI systems into a unified pipeline:
+
+- **Gemini (Google GenAI SDK)** generates structured narrative prompts.
+- **SDXL via Hugging Face** converts prompts into stylized illustrations.
+- **Edge TTS** produces narration for each panel.
+- **FastAPI** orchestrates the pipeline and synchronizes story text, images, and audio.
   
 ---
 
 ## ☁️ Google Cloud Usage
 
-EchoSketch uses Google’s Gemini large language models through the Google AI Studio API.  
-Gemini runs on Google Cloud’s generative AI infrastructure, enabling scalable and reliable story generation.
+EchoSketch uses Google's Gemini large language models through the **Google Generative AI SDK**, which provides access to Gemini models running on **Google Cloud’s generative AI infrastructure**.
 
-This allows EchoSketch to convert simple prompts into structured story arcs that drive the visual storyboard generation pipeline.
+The backend service interacts with Gemini to generate structured story arcs that drive the storyboard pipeline. These prompts are then used to generate stylized images and narration.
+
+The application architecture is designed to be deployed on **Google Cloud Run**, allowing the FastAPI backend to scale automatically while serving the React frontend.
 
 ---
 
