@@ -1,7 +1,6 @@
-EchoSketch AI is a high-fidelity, interactive storytelling platform that transforms simple ideas into multidimensional cinematic experiences. Using state-of-the-art Generative AI, it builds 5-panel story arcs complete with stylized visuals, orchestral-quality narration, and a cinematic "Marvel-style" user interface.
+EchoSketch AI is a high-fidelity, interactive storytelling platform that transforms simple ideas into multidimensional cinematic experiences. Using state-of-the-art Generative AI, it builds 5-panel story arcs complete with stylized visuals.
 
 Key Features:
-Marvel-Style Intro: A high-energy "Spider-Verse" style flipbook preloader that pre-activates the story atmosphere.
 Cinematic Storyboarding: A fluid, horizontal comic-strip interface built with Framer Motion.
 Subprocess Isolation: A robust backend architecture that isolates Image Generation to prevent SDK-level async corruption, ensuring 100% stability.
 Dynamic Genre/Style Switching: Support for Anime, Marvel Comics, Vintage Retro, Disney Pixar, and Watercolor art styles.
