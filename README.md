@@ -12,7 +12,7 @@ The goal of EchoSketch is to make storytelling more immersive, creative, and acc
 A fluid **horizontal comic-strip interface** that displays stories panel by panel with smooth animations using **Framer Motion**.
 
 ### 2. AI Story Generation
-Uses **Uses Google's Gemini models through the Google Generative AI SDK to expand a simple prompt into a structured 5-panel story arc**, powered by **Google Cloud’s generative AI infrastructure**, to expand a simple prompt into a structured 5-panel story arc.
+Uses **Google's Gemini models through the Google Generative AI SDK to expand a simple prompt into a structured 5-panel story arc**, powered by **Google Cloud’s generative AI infrastructure**, to expand a simple prompt into a structured 5-panel story arc.
 
 ### 3. Dynamic Art Styles
 Generate story visuals in multiple artistic styles:
@@ -55,17 +55,24 @@ Interactive Storyboard UI
 
 ## 🛠 Tech Stack
 
-## Frontend
+Frontend
 - React (Vite)
 - Tailwind CSS
 - Framer Motion
 
-## Backend
+Backend
 - FastAPI (Python)
 - Google Gemini via Google Generative AI SDK (google-genai) — Story Director
 - Hugging Face SDXL — Visual Artist
 - Edge TTS — Narrator
 
+Gemini Implementation
+
+- EchoSketch uses Google's Gemini models through the Google Generative AI SDK.
+
+- Implementation:
+  backend/services/gemini.py
+  
 ## Multimodal AI Pipeline
 
 EchoSketch combines multiple AI systems into a unified pipeline:
@@ -74,7 +81,7 @@ EchoSketch combines multiple AI systems into a unified pipeline:
 - **SDXL via Hugging Face** converts prompts into stylized illustrations.
 - **Edge TTS** produces narration for each panel.
 - **FastAPI** orchestrates the pipeline and synchronizes story text, images, and audio.
-  
+
 ---
 
 ## ☁️ Google Cloud Usage
