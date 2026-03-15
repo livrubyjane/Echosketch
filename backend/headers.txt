@@ -1,0 +1,23 @@
+HTTP/2 500 
+date: Fri, 13 Mar 2026 18:08:11 GMT
+content-type: application/json
+cf-ray: 9dbcfb7f8b62b5bf-MAA
+cf-cache-status: DYNAMIC
+access-control-allow-origin: *
+server: cloudflare
+strict-transport-security: max-age=0; includeSubDomains; preload
+x-cache: MISS
+x-content-type-options: nosniff
+access-control-allow-headers: Content-Type
+access-control-allow-methods: GET, POST, OPTIONS
+access-control-expose-headers: X-Auth-Status
+access-control-expose-headers: X-Auth-Reason
+access-control-expose-headers: X-Debug-Token
+access-control-expose-headers: X-Debug-Token-Source
+access-control-expose-headers: X-Debug-Referrer
+access-control-expose-headers: X-Debug-Legacy-Token-Match
+access-control-expose-headers: X-Debug-Allowlist-Match
+access-control-expose-headers: X-Debug-User-Id
+x-error-type: Internal Server Error
+speculation-rules: "/cdn-cgi/speculation"
+

@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+google-genai
+edge-tts
+httpx
+python-dotenv
+
+g4f
+curl_cffi
+nest_asyncio
+PyExecJS
+
+huggingface_hub
+pillow

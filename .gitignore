@@ -1,0 +1,5 @@
+.env
+__pycache__/
+generated_media/
+*.pyc
+node_modules/

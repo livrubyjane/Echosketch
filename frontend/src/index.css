@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", "Nunito", system-ui, sans-serif;
+  --font-display: "Bangers", "Fredoka", "Comic Sans MS", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #0f172a;
+}
+
+/* Custom scrollbar for horizontal timeline */
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #fb923c;
+  border-radius: 10px;
+  border: 3px solid #0f172a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
+
+/* Comic Book Halftone Texture Overlay */
+.comic-texture {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.4) 100%),
+    radial-gradient(rgba(0,0,0,0.15) 20%, transparent 20%);
+  background-size: 100% 100%, 4px 4px; /* Halftone dots */
+  z-index: 0;
+  mix-blend-mode: multiply;
+}
+
+/* Comic Frame / Speech Bubble styles */
+.comic-panel-container {
+  background-color: white;
+  border: 4px solid #111;
+  box-shadow: 8px 8px 0px rgba(0,0,0,1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* LOUD Visual Cards (Netflix / Spider-Verse feel) */
+.loud-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 4px solid #111;
+  box-shadow: 6px 6px 0px rgba(0,0,0,1);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+  background: #fff;
+}
+.loud-card:hover {
+  transform: translateY(-8px) scale(1.05) rotate(-1deg);
+  box-shadow: 12px 12px 0px rgba(251, 146, 60, 1);
+  border-color: #111;
+  z-index: 10;
+}
+.loud-card.selected {
+  border-color: #ef4444; /* Bright comic red */
+  transform: scale(1.02);
+  box-shadow: 0 0 0 4px #ef4444, 8px 8px 0px rgba(239, 68, 68, 1);
+}
+
+.loud-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  filter: saturate(1.2) contrast(1.1);
+}
+.loud-card:hover img {
+  transform: scale(1.1);
+}
+
+.loud-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 50%);
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+}
+
+/* Big Loud Button */
+.comic-btn {
+  background-color: #fca5a5;
+  border: 4px solid #111;
+  box-shadow: 6px 6px 0px #111;
+  transition: all 0.1s ease-in-out;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.comic-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px #111;
+  background-color: #f87171;
+}
+.comic-btn:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0px 0px 0px #111;
+}
+
+/* Animations */
+@keyframes pulseMic {
+  0% { transform: scale(0.8); opacity: 0.8; box-shadow: 0 0 0px #111; }
+  50% { transform: scale(1.1); box-shadow: 6px 6px 0px #111; opacity: 1; }
+  100% { transform: scale(0.8); opacity: 0.8; box-shadow: 0 0 0px #111; }
+}
+
+.particle {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100px) scale(0); opacity: 0; }
+  20% { opacity: 0.6; transform: translateY(80px) scale(1); }
+  80% { opacity: 0.3; transform: translateY(20px) scale(0.8); }
+  100% { transform: translateY(-20px) scale(0.5); opacity: 0; }
+}
+
+/* Cinematic Intro Animations */
+@keyframes marvelRush {
+  0% { transform: scale(3) translateZ(0); opacity: 0; filter: blur(20px); }
+  10% { transform: scale(1.05) rotate(calc(var(--rand-rot) * 1deg)); opacity: 1; filter: blur(0px); }
+  90% { transform: scale(1) rotate(calc(var(--rand-rot) * -1deg)); opacity: 1; }
+  100% { transform: scale(0.5); opacity: 0; filter: blur(10px); }
+}
+
+.intro-panel {
+  position: absolute;
+  opacity: 0;
+  border: 6px solid #fff;
+  box-shadow: 16px 16px 0px rgba(0,0,0,1);
+  transform-origin: center;
+  animation: marvelRush 0.4s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
+}
+.intro-panel:nth-child(even) { --rand-rot: 4; }
+.intro-panel:nth-child(odd) { --rand-rot: -4; }
+.intro-panel:nth-child(3n) { --rand-rot: 6; }
